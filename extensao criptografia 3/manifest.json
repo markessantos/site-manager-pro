@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Site Manager Pro - Auto Login",
+    "version": "2.0.0",
+    "description": "Extensão avançada para gerenciamento automático de sites com suporte completo ao Cookie Editor",
+    "permissions": [
+        "storage",
+        "cookies",
+        "tabs",
+        "activeTab",
+        "windows",
+        "scripting",
+        "clipboardRead",
+        "webNavigation",
+        "management"
+    ],
+    "host_permissions": [
+        "https://*/*",
+        "http://*/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Site Manager Pro",
+        "default_icon": {
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        }
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}
